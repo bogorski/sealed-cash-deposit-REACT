@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+@media print {
+	.onlyScreen {
+		display: none;
+	}
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Input-component {
+	background-color: #5c66ff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: calc(8px + 2vmin);
+	color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.nextPage {
+	page-break-after: always;
+}
+
+.paragraph {
+	font-size: 1em;
+	margin: 0.5em 2em;
+}
+.row {
+	display: flex;
+}
+.containerA4 {
+	width: 21cm;
+	height: 29.7cm;
+	border: 1px solid red;
+	padding: 0;
+	margin: 0;
+	background-color: khaki;
+}
+
+.tableStyle {
+	display: flex;
+	justify-content: center;
+}
+
+.DepositTable {
+}
+
+td {
+	border: 1px solid #000;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	background-color: #282c34;
+	display: flex;
+	justify-content: center;
+	font-size: calc(16px + 2vmin);
+	color: white;
 }
