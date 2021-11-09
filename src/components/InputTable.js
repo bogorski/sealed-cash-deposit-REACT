@@ -245,6 +245,7 @@ function CashDepositTable() {
 			</div>
 			<div className="DepositTable">
 				<DepositTable />
+				<DepositTable />
 			</div>
 		</div>
 	);
