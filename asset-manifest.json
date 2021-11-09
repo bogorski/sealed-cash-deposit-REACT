@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/sealed-cash-deposit-REACT/static/css/main.b479c1c1.chunk.css",
-    "main.js": "/sealed-cash-deposit-REACT/static/js/main.02f36bb3.chunk.js",
-    "main.js.map": "/sealed-cash-deposit-REACT/static/js/main.02f36bb3.chunk.js.map",
-    "runtime-main.js": "/sealed-cash-deposit-REACT/static/js/runtime-main.05944bd7.js",
-    "runtime-main.js.map": "/sealed-cash-deposit-REACT/static/js/runtime-main.05944bd7.js.map",
-    "static/js/2.446f6757.chunk.js": "/sealed-cash-deposit-REACT/static/js/2.446f6757.chunk.js",
-    "static/js/2.446f6757.chunk.js.map": "/sealed-cash-deposit-REACT/static/js/2.446f6757.chunk.js.map",
-    "static/js/3.44680ada.chunk.js": "/sealed-cash-deposit-REACT/static/js/3.44680ada.chunk.js",
-    "static/js/3.44680ada.chunk.js.map": "/sealed-cash-deposit-REACT/static/js/3.44680ada.chunk.js.map",
+    "main.js": "/sealed-cash-deposit-REACT/static/js/main.483223a7.chunk.js",
+    "main.js.map": "/sealed-cash-deposit-REACT/static/js/main.483223a7.chunk.js.map",
+    "runtime-main.js": "/sealed-cash-deposit-REACT/static/js/runtime-main.8965e297.js",
+    "runtime-main.js.map": "/sealed-cash-deposit-REACT/static/js/runtime-main.8965e297.js.map",
+    "static/js/2.383c8f14.chunk.js": "/sealed-cash-deposit-REACT/static/js/2.383c8f14.chunk.js",
+    "static/js/2.383c8f14.chunk.js.map": "/sealed-cash-deposit-REACT/static/js/2.383c8f14.chunk.js.map",
+    "static/js/3.4c735db2.chunk.js": "/sealed-cash-deposit-REACT/static/js/3.4c735db2.chunk.js",
+    "static/js/3.4c735db2.chunk.js.map": "/sealed-cash-deposit-REACT/static/js/3.4c735db2.chunk.js.map",
     "index.html": "/sealed-cash-deposit-REACT/index.html",
     "static/css/main.b479c1c1.chunk.css.map": "/sealed-cash-deposit-REACT/static/css/main.b479c1c1.chunk.css.map",
-    "static/js/2.446f6757.chunk.js.LICENSE.txt": "/sealed-cash-deposit-REACT/static/js/2.446f6757.chunk.js.LICENSE.txt"
+    "static/js/2.383c8f14.chunk.js.LICENSE.txt": "/sealed-cash-deposit-REACT/static/js/2.383c8f14.chunk.js.LICENSE.txt",
+    "static/media/druk.93902dc5.png": "/sealed-cash-deposit-REACT/static/media/druk.93902dc5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.05944bd7.js",
-    "static/js/2.446f6757.chunk.js",
+    "static/js/runtime-main.8965e297.js",
+    "static/js/2.383c8f14.chunk.js",
     "static/css/main.b479c1c1.chunk.css",
-    "static/js/main.02f36bb3.chunk.js"
+    "static/js/main.483223a7.chunk.js"
   ]
 }
