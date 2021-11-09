@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import logo from "../druk.png";
-//"/logo192.png";
-//import logo from "druk.png";
+import druk from "../images/druk.png";
+
 /*function TransferForm(props) {
 	const canvasRef = useRef(null);
 
@@ -29,17 +28,13 @@ const Canvas = (props) => {
 		canvas.height = 1253;
 		canvas.width = 1772;
 		const image = new Image();
-		//context.drawImage(image, 0, 0);
 
 		image.onload = function () {
 			context.drawImage(image, 0, 0);
+			context.fillText("Mateusz", 110, 200);
 		};
-		//	image.src = { logo };
-		image.src = { logo };
-		//image.src = " https://hdmax.pl/obrazy/1/59/jablka.jpg";
-		//Our first draw
-		//	context.fillStyle = "red";
-		//	context.fillRect(0, 0, context.canvas.width, context.canvas.height);
+
+		image.src = druk;
 	}, []);
 
 	return (
@@ -50,4 +45,3 @@ const Canvas = (props) => {
 };
 
 export default Canvas;
-//export default TransferForm;

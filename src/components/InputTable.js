@@ -23,6 +23,7 @@ class TableRowInput extends React.Component {
 				name={this.props.name}
 				type="text"
 				value={this.props.inputValue}
+				//onChange={this.props.onChange}
 				onChange={(event) => this.props.onChange(event)}
 			/>
 		);
@@ -43,7 +44,7 @@ class Table extends React.Component {
 	}
 
 	render() {
-		const sumFives = (parseFloat(this.props.amountFives) * 5).toFixed(2);
+		/*	const sumFives = (parseFloat(this.props.amountFives) * 5).toFixed(2);
 		const sumTwos = (parseFloat(this.props.amountTwos) * 2).toFixed(2);
 		const sumOnes = (parseFloat(this.props.amountOnes) * 1).toFixed(2);
 		const sumFifty = (
@@ -62,7 +63,7 @@ class Table extends React.Component {
 			parseFloat(this.props.amountFifty) +
 			parseFloat(this.props.amountTwenty) +
 			parseFloat(this.props.amountTens);
-		const sumValue = (
+		const totalValue = (
 			Math.round(
 				(parseFloat(sumFives) +
 					parseFloat(sumTwos) +
@@ -86,7 +87,7 @@ class Table extends React.Component {
 		).toFixed(2);
 		const overloaded =
 			sumWeight >= 16 ? "Worek za ciężki" : "Worek ma odpowiednią wagę";
-
+*/
 		return (
 			<table>
 				<thead>
@@ -100,8 +101,9 @@ class Table extends React.Component {
 					<TableRowInput
 						name="amountFives"
 						firstColumn="5 zł"
-						thirdColumn={sumFives}
+						thirdColumn={this.props.sumFives}
 						inputValue={this.props.amountFives}
+						//onChange={this.props.handleChange}
 						onChange={(event) => this.props.onChange(event)}
 						inputRef={(input) => {
 							this.firstInput = input;
@@ -111,35 +113,35 @@ class Table extends React.Component {
 					<TableRowInput
 						name="amountTwos"
 						firstColumn="2 zł"
-						thirdColumn={sumTwos}
+						thirdColumn={this.props.sumTwos}
 						inputValue={this.props.amountTwos}
 						onChange={(event) => this.props.onChange(event)}
 					/>
 					<TableRowInput
 						name="amountOnes"
 						firstColumn="1 zł"
-						thirdColumn={sumOnes}
+						thirdColumn={this.props.sumOnes}
 						inputValue={this.props.amountOnes}
 						onChange={(event) => this.props.onChange(event)}
 					/>
 					<TableRowInput
 						name="amountFifty"
 						firstColumn="50 gr"
-						thirdColumn={sumFifty}
+						thirdColumn={this.props.sumFifty}
 						inputValue={this.props.amountFifty}
 						onChange={(event) => this.props.onChange(event)}
 					/>
 					<TableRowInput
 						name="amountTwenty"
 						firstColumn="20 gr"
-						thirdColumn={sumTwenty}
+						thirdColumn={this.props.sumTwenty}
 						inputValue={this.props.amountTwenty}
 						onChange={(event) => this.props.onChange(event)}
 					/>
 					<TableRowInput
 						name="amountTens"
 						firstColumn="10 gr"
-						thirdColumn={sumTens}
+						thirdColumn={this.props.sumTens}
 						inputValue={this.props.amountTens}
 						onChange={(event) => this.props.onChange(event)}
 					/>
@@ -147,13 +149,13 @@ class Table extends React.Component {
 				<tfoot>
 					<TableRow
 						firstColumn="Razem"
-						secondColumn={sumQuantity}
-						thirdColumn={sumValue}
+						secondColumn={this.props.totalAmount}
+						thirdColumn={this.props.totalValue}
 					/>
 					<TableRow
 						firstColumn="Waga"
-						secondColumn={overloaded}
-						thirdColumn={sumWeight}
+						secondColumn={this.props.overloaded}
+						thirdColumn={this.props.sumWeight}
 					/>
 				</tfoot>
 			</table>
@@ -162,20 +164,20 @@ class Table extends React.Component {
 }
 
 class DepositTable extends React.Component {
-	constructor(props) {
+	/*	constructor(props) {
 		super(props);
-		this.state = {
+		/*	this.state = {
 			amountFives: 0,
 			amountTwos: 0,
 			amountOnes: 0,
 			amountFifty: 0,
 			amountTwenty: 0,
 			amountTens: 0,
-		};
-		this.handleChange = this.handleChange.bind(this);
-	}
+		};*/
+	//	this.handleChange = this.handleChange.bind(this);
+	//	}
 
-	handleChange(event) {
+	/*handleChange(event) {
 		let value = 0;
 
 		if (Number.isNaN(parseFloat(event.target.value))) {
@@ -191,19 +193,30 @@ class DepositTable extends React.Component {
 		}
 		const name = event.target.name;
 		this.setState({ [name]: value });
-	}
+	}*/
 
 	render() {
 		return (
 			<div className="tableStyle">
 				<Table
-					amountFives={this.state.amountFives}
-					amountTwos={this.state.amountTwos}
-					amountOnes={this.state.amountOnes}
-					amountFifty={this.state.amountFifty}
-					amountTwenty={this.state.amountTwenty}
-					amountTens={this.state.amountTens}
-					onChange={this.handleChange}
+					amountFives={this.props.amountFives}
+					sumFives={this.props.sumFives}
+					amountTwos={this.props.amountTwos}
+					sumTwos={this.props.sumTwos}
+					amountOnes={this.props.amountOnes}
+					sumOnes={this.props.sumOnes}
+					amountFifty={this.props.amountFifty}
+					sumFifty={this.props.sumFifty}
+					amountTwenty={this.props.amountTwenty}
+					sumTwenty={this.props.sumTwenty}
+					amountTens={this.props.amountTens}
+					sumTens={this.props.sumTens}
+					totalAmount={this.props.totalAmount}
+					totalValue={this.props.totalValue}
+					overloaded={this.props.overloaded}
+					sumWeight={this.props.sumWeight}
+					//onChange={this.props.handleChange}
+					onChange={(event) => this.props.onChange(event)}
 				/>
 			</div>
 		);
@@ -235,7 +248,7 @@ class NameForm extends React.Component {
 	}
 }
 
-function CashDepositTable() {
+function CashDepositTable(props) {
 	return (
 		<div className="onlyScreen">
 			<header className="App-header">Wpłaty zamknięte</header>
@@ -244,8 +257,25 @@ function CashDepositTable() {
 				<NameForm label="Numer plomby" />
 			</div>
 			<div className="DepositTable">
-				<DepositTable />
-				<DepositTable />
+				<DepositTable
+					amountFives={props.amountFives}
+					sumFives={props.sumFives}
+					amountTwos={props.amountTwos}
+					sumTwos={props.sumTwos}
+					amountOnes={props.amountOnes}
+					sumOnes={props.sumOnes}
+					amountFifty={props.amountFifty}
+					sumFifty={props.sumFifty}
+					amountTwenty={props.amountTwenty}
+					sumTwenty={props.sumTwenty}
+					amountTens={props.amountTens}
+					sumTens={props.sumTens}
+					totalAmount={props.totalAmount}
+					totalValue={props.totalValue}
+					overloaded={props.overloaded}
+					sumWeight={props.sumWeight}
+					onChange={(event) => props.onChange(event)}
+				/>
 			</div>
 		</div>
 	);

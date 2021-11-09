@@ -116,7 +116,7 @@ function Table(props) {
 				<tfoot>
 					<TableRow
 						firstColumn="Razem"
-						secondColumn={props.totalQuantity}
+						secondColumn={props.totalAmount}
 						thirdColumn={props.totalValue}
 						fourthColumn="PLN"
 					/>
@@ -133,7 +133,7 @@ function PaymentSpecification(props) {
 			<Paragraph text="DANE JEDNOSTKI ORGANIZACYJNEJ KLIENTA DOKONUJĄCEJ WPŁATY:" />
 			<div className="row">
 				<Paragraph text="Nazwa klienta:" />
-				<Paragraph text="Robert Stawieraj" />
+				<Paragraph text="Robert S" />
 			</div>
 			<div className="row">
 				<Paragraph text="Ulica:" />
@@ -164,7 +164,22 @@ function PaymentSpecification(props) {
 				<Paragraph text={props.sealNumber} />
 			</div>
 			<div>
-				<Table />
+				<Table
+					amountFives={props.amountFives}
+					sumFives={props.sumFives}
+					amountTwos={props.amountTwos}
+					sumTwos={props.sumTwos}
+					amountOnes={props.amountOnes}
+					sumOnes={props.sumOnes}
+					amountFifty={props.amountFifty}
+					sumFifty={props.sumFifty}
+					amountTwenty={props.amountTwenty}
+					sumTwenty={props.sumTwenty}
+					amountTens={props.amountTens}
+					sumTens={props.sumTens}
+					totalAmount={props.totalAmount}
+					totalValue={props.totalValue}
+				/>
 			</div>
 		</div>
 	);
