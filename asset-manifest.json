@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/sealed-cash-deposit-REACT/static/css/main.9ddbd5ca.chunk.css",
-    "main.js": "/sealed-cash-deposit-REACT/static/js/main.cfa8838e.chunk.js",
-    "main.js.map": "/sealed-cash-deposit-REACT/static/js/main.cfa8838e.chunk.js.map",
+    "main.css": "/sealed-cash-deposit-REACT/static/css/main.9652b3fc.chunk.css",
+    "main.js": "/sealed-cash-deposit-REACT/static/js/main.fa114bdb.chunk.js",
+    "main.js.map": "/sealed-cash-deposit-REACT/static/js/main.fa114bdb.chunk.js.map",
     "runtime-main.js": "/sealed-cash-deposit-REACT/static/js/runtime-main.118fb297.js",
     "runtime-main.js.map": "/sealed-cash-deposit-REACT/static/js/runtime-main.118fb297.js.map",
     "static/js/2.3bf9fb91.chunk.js": "/sealed-cash-deposit-REACT/static/js/2.3bf9fb91.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.13335c00.chunk.js": "/sealed-cash-deposit-REACT/static/js/3.13335c00.chunk.js",
     "static/js/3.13335c00.chunk.js.map": "/sealed-cash-deposit-REACT/static/js/3.13335c00.chunk.js.map",
     "index.html": "/sealed-cash-deposit-REACT/index.html",
-    "static/css/main.9ddbd5ca.chunk.css.map": "/sealed-cash-deposit-REACT/static/css/main.9ddbd5ca.chunk.css.map",
+    "static/css/main.9652b3fc.chunk.css.map": "/sealed-cash-deposit-REACT/static/css/main.9652b3fc.chunk.css.map",
     "static/js/2.3bf9fb91.chunk.js.LICENSE.txt": "/sealed-cash-deposit-REACT/static/js/2.3bf9fb91.chunk.js.LICENSE.txt",
     "static/media/druk.93902dc5.png": "/sealed-cash-deposit-REACT/static/media/druk.93902dc5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.118fb297.js",
     "static/js/2.3bf9fb91.chunk.js",
-    "static/css/main.9ddbd5ca.chunk.css",
-    "static/js/main.cfa8838e.chunk.js"
+    "static/css/main.9652b3fc.chunk.css",
+    "static/js/main.fa114bdb.chunk.js"
   ]
 }
