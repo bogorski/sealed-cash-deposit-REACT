@@ -21,7 +21,7 @@ class TableRowInput extends React.Component {
 				ref={this.props.inputRef}
 				onClick={this.handleSelect}
 				name={this.props.name}
-				type="text"
+				type="tel"
 				value={this.props.inputValue}
 				//onChange={this.props.onChange}
 				onChange={(event) => this.props.onChange(event)}
@@ -197,87 +197,51 @@ class DepositTable extends React.Component {
 
 	render() {
 		return (
-			<div className="tableStyle">
-				<Table
-					amountFives={this.props.amountFives}
-					sumFives={this.props.sumFives}
-					amountTwos={this.props.amountTwos}
-					sumTwos={this.props.sumTwos}
-					amountOnes={this.props.amountOnes}
-					sumOnes={this.props.sumOnes}
-					amountFifty={this.props.amountFifty}
-					sumFifty={this.props.sumFifty}
-					amountTwenty={this.props.amountTwenty}
-					sumTwenty={this.props.sumTwenty}
-					amountTens={this.props.amountTens}
-					sumTens={this.props.sumTens}
-					totalAmount={this.props.totalAmount}
-					totalValue={this.props.totalValue}
-					overloaded={this.props.overloaded}
-					sumWeight={this.props.sumWeight}
-					//onChange={this.props.handleChange}
-					onChange={(event) => this.props.onChange(event)}
-				/>
-			</div>
-		);
-	}
-}
-
-class NameForm extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = { value: "" };
-		this.handleChange = this.handleChange.bind(this);
-	}
-
-	handleChange(event) {
-		this.setState({ value: event.target.value });
-	}
-
-	render() {
-		return (
-			<label>
-				{this.props.label}
-				<input
-					type="text"
-					value={this.state.value}
-					onChange={this.handleChange}
-				/>
-			</label>
+			<Table
+				amountFives={this.props.amountFives}
+				sumFives={this.props.sumFives}
+				amountTwos={this.props.amountTwos}
+				sumTwos={this.props.sumTwos}
+				amountOnes={this.props.amountOnes}
+				sumOnes={this.props.sumOnes}
+				amountFifty={this.props.amountFifty}
+				sumFifty={this.props.sumFifty}
+				amountTwenty={this.props.amountTwenty}
+				sumTwenty={this.props.sumTwenty}
+				amountTens={this.props.amountTens}
+				sumTens={this.props.sumTens}
+				totalAmount={this.props.totalAmount}
+				totalValue={this.props.totalValue}
+				overloaded={this.props.overloaded}
+				sumWeight={this.props.sumWeight}
+				//onChange={this.props.handleChange}
+				onChange={(event) => this.props.onChange(event)}
+			/>
 		);
 	}
 }
 
 function CashDepositTable(props) {
 	return (
-		<div className="onlyScreen">
-			<header className="App-header">Wpłaty zamknięte</header>
-			<div className="Input-component">
-				<NameForm label="Imię i nazwisko" />
-				<NameForm label="Numer plomby" />
-			</div>
-			<div className="DepositTable">
-				<DepositTable
-					amountFives={props.amountFives}
-					sumFives={props.sumFives}
-					amountTwos={props.amountTwos}
-					sumTwos={props.sumTwos}
-					amountOnes={props.amountOnes}
-					sumOnes={props.sumOnes}
-					amountFifty={props.amountFifty}
-					sumFifty={props.sumFifty}
-					amountTwenty={props.amountTwenty}
-					sumTwenty={props.sumTwenty}
-					amountTens={props.amountTens}
-					sumTens={props.sumTens}
-					totalAmount={props.totalAmount}
-					totalValue={props.totalValue}
-					overloaded={props.overloaded}
-					sumWeight={props.sumWeight}
-					onChange={(event) => props.onChange(event)}
-				/>
-			</div>
-		</div>
+		<DepositTable
+			amountFives={props.amountFives}
+			sumFives={props.sumFives}
+			amountTwos={props.amountTwos}
+			sumTwos={props.sumTwos}
+			amountOnes={props.amountOnes}
+			sumOnes={props.sumOnes}
+			amountFifty={props.amountFifty}
+			sumFifty={props.sumFifty}
+			amountTwenty={props.amountTwenty}
+			sumTwenty={props.sumTwenty}
+			amountTens={props.amountTens}
+			sumTens={props.sumTens}
+			totalAmount={props.totalAmount}
+			totalValue={props.totalValue}
+			overloaded={props.overloaded}
+			sumWeight={props.sumWeight}
+			onChange={(event) => props.onChange(event)}
+		/>
 	);
 }
 export default CashDepositTable;

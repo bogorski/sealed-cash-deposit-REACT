@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/components/mongoose.js
+/src/components/mongo.js
 
 # testing
 /coverage

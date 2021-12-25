@@ -152,7 +152,7 @@ function PaymentSpecification(props) {
 			</div>
 			<div className="row">
 				<Paragraph text="Kwota wpłaty:" />
-				<Paragraph text={props.depositAmount} />
+				<Paragraph text={props.totalValue} />
 			</div>
 			<div className="row">
 				<Paragraph text="Słownie:" />
@@ -179,6 +179,8 @@ function PaymentSpecification(props) {
 					sumTens={props.sumTens}
 					totalAmount={props.totalAmount}
 					totalValue={props.totalValue}
+					AmountInWords={props.AmountInWords}
+					sealNumber={props.sealNumber}
 				/>
 			</div>
 		</div>
