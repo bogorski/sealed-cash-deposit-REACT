@@ -1,23 +1,14 @@
 {
   "files": {
-    "main.css": "/sealed-cash-deposit-REACT/static/css/main.9652b3fc.chunk.css",
-    "main.js": "/sealed-cash-deposit-REACT/static/js/main.1290b72f.chunk.js",
-    "main.js.map": "/sealed-cash-deposit-REACT/static/js/main.1290b72f.chunk.js.map",
-    "runtime-main.js": "/sealed-cash-deposit-REACT/static/js/runtime-main.308c01f1.js",
-    "runtime-main.js.map": "/sealed-cash-deposit-REACT/static/js/runtime-main.308c01f1.js.map",
-    "static/js/2.f1fa75f4.chunk.js": "/sealed-cash-deposit-REACT/static/js/2.f1fa75f4.chunk.js",
-    "static/js/2.f1fa75f4.chunk.js.map": "/sealed-cash-deposit-REACT/static/js/2.f1fa75f4.chunk.js.map",
-    "static/js/3.c02b88d2.chunk.js": "/sealed-cash-deposit-REACT/static/js/3.c02b88d2.chunk.js",
-    "static/js/3.c02b88d2.chunk.js.map": "/sealed-cash-deposit-REACT/static/js/3.c02b88d2.chunk.js.map",
+    "main.css": "/sealed-cash-deposit-REACT/static/css/main.4f3f5f1b.css",
+    "main.js": "/sealed-cash-deposit-REACT/static/js/main.397b861c.js",
+    "static/media/druk.png": "/sealed-cash-deposit-REACT/static/media/druk.93902dc5de987b5e27d2.png",
     "index.html": "/sealed-cash-deposit-REACT/index.html",
-    "static/css/main.9652b3fc.chunk.css.map": "/sealed-cash-deposit-REACT/static/css/main.9652b3fc.chunk.css.map",
-    "static/js/2.f1fa75f4.chunk.js.LICENSE.txt": "/sealed-cash-deposit-REACT/static/js/2.f1fa75f4.chunk.js.LICENSE.txt",
-    "static/media/druk.93902dc5.png": "/sealed-cash-deposit-REACT/static/media/druk.93902dc5.png"
+    "main.4f3f5f1b.css.map": "/sealed-cash-deposit-REACT/static/css/main.4f3f5f1b.css.map",
+    "main.397b861c.js.map": "/sealed-cash-deposit-REACT/static/js/main.397b861c.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.308c01f1.js",
-    "static/js/2.f1fa75f4.chunk.js",
-    "static/css/main.9652b3fc.chunk.css",
-    "static/js/main.1290b72f.chunk.js"
+    "static/css/main.4f3f5f1b.css",
+    "static/js/main.397b861c.js"
   ]
 }
