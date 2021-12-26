@@ -5,6 +5,8 @@ import PaymentSpecification from "./components/PaymentSpecification";
 import { TransferForm } from "./components/TransferForm";
 import React from "react";
 import druk from "./images/druk.png";
+import mongoose from "mongoose";
+//import * as mongoose from "mongoose";
 
 class NameForm extends React.Component {
 	render() {
@@ -117,8 +119,13 @@ class App extends React.Component {
 		//	window.print();
 	}
 	handleButtonSend(event) {
-		/*const mongoClient = require("mongodb").MongoClient;
-		const url =
+		//	const mongoClient = require("mongodb").MongoClient;
+		/*	const url =
+			"mongodb+srv://mateusz:MsL20180@cluster0.n0fem.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+		const mongojs = require("mongojs");
+		//	const db = mongojs(url, {});
+
+		/*const url =
 			"mongodb+srv://mateusz:MsL20180@cluster0.n0fem.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 		const dbname = "test";
 		mongoClient.connect(url, {}, (error, client) => {
@@ -136,19 +143,26 @@ class App extends React.Component {
 				}
 			);
 			console.log("ok");
-		});
-		//const mongoose = require("mongoose");
-		/*	console.log(mongoose);
-		const url =
-			"mongodb+srv://mateusz:MsL20180@cluster0.n0fem.mongodb.net/test?retryWrites=true&w=majority";
+		});*/
 
-		mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
-		var db = mongoose.connection;
-		db.on("error", console.error.bind(console, "MongoDB connection error:"));
-		const Cat = mongoose.model("Cat2", { name: String });
+		//const mongoose = require("mongoose");
+		//console.log(mongoose);
+		async function ccc() {
+			const url =
+				"mongodb+srv://mateusz:MsL20180@cluster0.n0fem.mongodb.net/test?retryWrites=true&w=majority";
+
+			await mongoose.connect(url, {
+				useNewUrlParser: true,
+				useUnifiedTopology: true,
+			});
+			var db = mongoose.connection;
+			db.on("error", console.error.bind(console, "MongoDB connection error:"));
+			/*	const Cat = mongoose.model("Cat2", { name: String });
 
 		const kitty = new Cat({ name: "Maja2" });
 		kitty.save().then(() => console.log("dodane"));*/
+		}
+		ccc();
 	}
 
 	render() {
