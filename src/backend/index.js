@@ -1,10 +1,13 @@
 const express = require("express");
 const app = express();
+const config = require("./config");
 
-app.get("/", function (req, res) {
-	res.send("server is working...");
-});
+const apiRouter = require("../routers/api");
 
-app.listen(80, function () {
-	console.log("server is listening...");
+//routes
+app.use("/", apiRouter);
+
+//server
+app.listen(config.port, function () {
+	console.log("server is listening..." + config.port);
 });
