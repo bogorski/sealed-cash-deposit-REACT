@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sealed-cash-deposit-REACT/static/css/main.4f3f5f1b.css",
-    "main.js": "/sealed-cash-deposit-REACT/static/js/main.397b861c.js",
+    "main.js": "/sealed-cash-deposit-REACT/static/js/main.5c47d3a0.js",
     "static/media/druk.png": "/sealed-cash-deposit-REACT/static/media/druk.93902dc5de987b5e27d2.png",
     "index.html": "/sealed-cash-deposit-REACT/index.html",
     "main.4f3f5f1b.css.map": "/sealed-cash-deposit-REACT/static/css/main.4f3f5f1b.css.map",
-    "main.397b861c.js.map": "/sealed-cash-deposit-REACT/static/js/main.397b861c.js.map"
+    "main.5c47d3a0.js.map": "/sealed-cash-deposit-REACT/static/js/main.5c47d3a0.js.map"
   },
   "entrypoints": [
     "static/css/main.4f3f5f1b.css",
-    "static/js/main.397b861c.js"
+    "static/js/main.5c47d3a0.js"
   ]
 }
